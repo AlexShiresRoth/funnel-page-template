@@ -1,0 +1,271 @@
+:root {
+  --brand-main: #666;
+  --brand-accent: #b80005;
+  --brand-accent-faded: #b800067a;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button {
+  font-family: "Oswald", sans-serif;
+}
+.nav-center-cstm {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0 1px 5px #eee;
+}
+.header-cstm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.col-cstm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.col-cstm h1 {
+  color: #fff;
+  font-size: 4.5vw;
+}
+.col-cstm h2 {
+  font-size: 3.5vw;
+}
+.col-cstm p {
+  color: #eee;
+  font-size: 1.5vw;
+}
+.white-bg {
+  font-size: 2.5vw;
+}
+.white-bg p {
+  color: #666;
+}
+.icon-gem,
+.question-mark,
+.solid-gem {
+  font-size: 8vw;
+  color: var(--brand-accent);
+}
+.large {
+  font-size: 14vw;
+}
+.col-cstm .divider-cstm {
+  height: 2px;
+  width: 150px;
+  background: var(--brand-accent);
+  display: block;
+}
+.col-cstm button {
+  height: 8vh;
+  width: 17vw;
+  font-size: 1.4vw;
+  border-radius: 2px;
+  border: 0;
+  transition: all 0.3s ease;
+}
+.col-cstm .btn-alt {
+  background: var(--brand-accent);
+  color: #fff;
+}
+.col-cstm .btn-alt:hover {
+  box-shadow: 0 1px 10px var(--brand-accent);
+}
+.col-cstm button:hover {
+  cursor: pointer;
+}
+
+.bg-setter {
+  background: url("./lulu-mens-bg-med.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-wide-cstm {
+  max-width: 90%;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+
+.section-cstm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10vh 0;
+}
+
+.img-container {
+  max-width: 40vw;
+}
+.img-container img {
+  max-width: 100%;
+}
+.img-bg {
+  background: url("./bg-for-lulu-mens.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+.single-column-container-cstm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+}
+.img-container-wide {
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+.img-container-wide h2 {
+  font-size: 3vw;
+  background: var(--brand-accent);
+  padding: 1vh 1vw;
+  color: #fff;
+  filter: drop-shadow(0 1px 10px var(--brand-accent));
+}
+.img-container-wide img {
+  max-width: 85%;
+  box-shadow: 0 1px 10px #999;
+}
+.video-column-cstm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5vh 0;
+}
+.video-column-cstm h2 {
+  text-align: center;
+}
+.video-column-cstm h2 span {
+  color: var(--brand-accent);
+}
+.video-column-cstm p {
+  max-width: 60%;
+  text-align: center;
+  color: var(--brand-main);
+}
+
+.banner-cstm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: url("./lulu-mens-bg-plain.jpg");
+}
+.banner-col {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.banner-col h3 {
+  color: #fff;
+  font-size: 3vw;
+}
+.banner-col p {
+  max-width: 50%;
+}
+.video-container-cstm iframe {
+  width: 80vw;
+  height: 50vh;
+}
+
+@media screen and (max-width: 950px) {
+  .container-wide-cstm {
+    max-width: 90%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6vh;
+    justify-items: center;
+  }
+  .col-cstm {
+    align-items: center;
+  }
+  .col-cstm h1 {
+    color: #fff;
+    font-size: 9vw;
+    text-align: center;
+  }
+  .col-cstm h2 {
+    font-size: 7vw;
+    text-align: center;
+  }
+  .banner-col h3 {
+      font-size: 5vw;
+      text-align:center;
+  }
+  .banner-col p {
+      max-width:90%;
+  }
+  .col-cstm p {
+    font-size: 4vw;
+    text-align: center;
+  }
+  .white-bg {
+    font-size: 2.5vw;
+  }
+  .col-cstm button {
+    height: 10vh;
+    width: 40vw;
+    font-size: 3vw;
+    border-radius: 2px;
+    border: 0;
+    transition: all 0.3s ease;
+  }
+  .img-container {
+    max-width: 100%;
+  }
+  .icon-gem,
+  .question-mark,
+  .solid-gem {
+    font-size: 15vw;
+    color: var(--brand-accent);
+  }
+  .img-container-wide img {
+      max-width:100%;
+  }
+  .video-column-cstm p {
+      max-width:85%;
+  }
+  .mobile-reverse-1 {
+      order:1;
+  }
+}
+@media screen and (max-width:600px){
+    .col-cstm button {
+        height: 7vh;
+        width: 40vw;
+        font-size: 4vw;
+        border-radius: 2px;
+        border: 0;
+        transition: all 0.3s ease;
+      }
+}
