@@ -1,0 +1,226 @@
+.heading-c {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vh;
+  margin-top: 10vh;
+  & h5 {
+    font-weight: 700;
+    margin: 1vh 0;
+    text-transform: uppercase;
+    color: var(--text-color);
+  }
+  & h2 {
+    font-weight: 200;
+    color: #111;
+    text-transform: uppercase;
+  }
+}
+
+.section-c {
+  display: flex;
+  justify-content: center;
+  margin: 10vh 0;
+  width: 100%;
+  & .container-c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    & .col-c {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2vh;
+      justify-items: center;
+      align-items: center;
+      max-width: 100%;
+      & img {
+        max-width: 80%;
+      }
+      & p {
+        max-width: 60%;
+        font-size: 2vw;
+        color: var(--text-color);
+        text-align: center;
+        margin: 4vh 0;
+        line-height: 1.5;
+      }
+      & button {
+        min-height: 7vh;
+        width: 20vw;
+        background: #111;
+        border: 0;
+        color: #fff;
+        transition: all 0.3s ease;
+        margin-bottom: 2vh;
+        border-radius: 3px;
+        &:hover {
+          cursor: pointer;
+          box-shadow: 0 1px 10px #111;
+        }
+      }
+    }
+  }
+  & .grid-c {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vh 2vw;
+    max-width: 90%;
+    justify-items: center;
+    & .col-c {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      & i {
+        font-size: 8vw;
+        color: var(--brand-accent);
+      }
+      & img {
+        max-width: 100%;
+      }
+      & p {
+        max-width: 60%;
+        font-size: 2vw;
+        color: var(--text-color);
+        text-align: center;
+        margin: 4vh 0;
+        line-height: 1.5;
+      }
+      & button {
+        min-height: 7vh;
+        width: 20vw;
+        background: #111;
+        border: 0;
+        color: #fff;
+        transition: all 0.3s ease;
+        margin-bottom: 2vh;
+        border-radius: 3px;
+        &:hover {
+          cursor: pointer;
+          box-shadow: 0 1px 10px #111;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .heading-c {
+    display: none;
+  }
+  .section-c {
+    display: flex;
+    justify-content: center;
+    margin: 10vh 0;
+    width: 100%;
+    & .container-c {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+      & .col-c {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2vh;
+        justify-items: center;
+        align-items: center;
+        max-width: 100%;
+        & img {
+          max-width: 90%;
+        }
+        & p {
+          max-width: 60%;
+          font-size: 3vw;
+        }
+        & button {
+          min-height: 7vh;
+          width: 35vw;
+        }
+      }
+    }
+    & .grid-c {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 6vh 2vw;
+      max-width: 90%;
+      justify-items: center;
+      & .col-c {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        & i {
+          font-size: 9vw;
+          color: var(--brand-accent);
+        }
+        & img {
+          max-width: 60%;
+        }
+        & p {
+          max-width: 60%;
+          font-size: 3vw;
+          color: var(--text-color);
+          text-align: center;
+          margin: 4vh 0;
+          line-height: 1.5;
+        }
+        & button {
+          min-height: 7vh;
+          width: 35vw;
+          background: #111;
+          border: 0;
+          color: #fff;
+          transition: all 0.3s ease;
+          margin-bottom: 2vh;
+          border-radius: 3px;
+          &:hover {
+            cursor: pointer;
+            box-shadow: 0 1px 10px #111;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .section-c {
+    & .container-c {
+      & .col-c {
+        & p {
+          max-width: 80%;
+          font-size: 6vw;
+        }
+        & button {
+          min-height: 7vh;
+          width: 60vw;
+          background: #111;
+        }
+      }
+    }
+    & .grid-c {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 7vh 2vw;
+      & .col-c {
+        & i {
+          font-size: 15vw;
+          color: var(--brand-accent);
+        }
+        & img {
+          max-width: 100%;
+        }
+        & p {
+          max-width: 80%;
+          font-size: 6vw;
+        }
+        & button {
+          min-height: 7vh;
+          width: 60vw;
+        }
+      }
+    }
+  }
+}

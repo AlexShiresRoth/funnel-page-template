@@ -1,0 +1,27 @@
+.footer {
+  width: 100%;
+  background: #fbfbfb;
+  display: flex;
+  justify-content: center;
+  padding: 2vh 0;
+  & .footer-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & .col-c {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      & img {
+        max-width: 20vw;
+      }
+      & p {
+        color: var(--text-color);
+      }
+    }
+  }
+}
